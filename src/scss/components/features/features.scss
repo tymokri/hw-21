@@ -1,0 +1,136 @@
+.features {
+  position: relative;
+
+  &:before {
+    @extend %bg-default;
+    @extend %bg-pos-absolut;
+
+    background-image: url("../assets/img/features-clouds.svg");
+    z-index: -1;
+  }
+
+  &__content-wrapper {
+    padding: 170px 0;
+    width: 100%;
+    margin: 0 auto;
+  }
+  
+  &__title-wrapper {
+    gap: 20px;
+    margin-bottom: 92px;
+  }
+
+  &__subtitle {
+    @extend %subtitle-style;
+  }
+
+  &__title-main {
+    font-weight: 500!important;
+    @extend %title-style;
+    font-size: $font-xl;
+  }
+
+  &__content {
+    margin-bottom: 92px;
+  }
+
+  &__title {
+    margin: 33px 0 25px;
+    font-family: $subsidiary-font;
+    font-size: $font-sm;
+    font-weight: 700;
+    line-height: 25px;
+    color: $secondary-accent-color;
+  }
+
+  &__description {
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    max-width: 140px;
+    font-family: $subsidiary-font;
+    font-size: $font-xxs;
+    font-weight: 600;
+    line-height: 20px;
+  }
+
+  &__icon-wrapper {
+    width: 100%;
+    position: relative;
+
+    &:not(:last-child):after,
+    &:not(:first-child):before {
+      content: '';
+      display: inline-block;
+      width: 14px;
+      height: 1px;
+      background: $section-line-color;
+      position: absolute;
+      top: 57%;
+    }
+
+    &:not(:last-child):after {
+      right: 0;
+    }
+
+    &:not(:first-child):before {
+      left: 0;
+    }
+  }
+
+  &__button-left,
+  &__button-right {
+    a {
+      font-family: $secondary-font;
+      font-size: $font-s;
+      padding: 13px 20px;
+      line-height: 13px;
+      border-radius: 2px;
+      font-weight: 700;
+    }
+  }
+
+  &__button-left {
+    a {
+      border: 1px $hover-color-btn solid;
+      color: $hover-color-tx;
+      background-color: $hover-color-btn;
+    }
+  }
+
+  &__button-right {
+    a {
+      border: 1px $default-color-btn solid;
+      color: $accent-color-tx;
+      background-color: $default-color-btn;
+    }
+  }
+
+  &__button-center {
+    font-family: $subsidiary-font;
+    font-size: $font-xxs;
+    font-weight: 600;
+    color: $btn-color-dark-tx;
+    padding: 12px 40px;
+    position: relative;
+
+    &:before,
+    &:after {
+      content: '';
+      display: inline-block;
+      width: 15px;
+      height: 1px;
+      background: $section-line-color;
+      position: absolute;
+      top: 50%;
+    }
+
+    &:before {
+      left: 15%;
+    }
+
+    &:after {
+      right: 15%;
+    }
+  }
+}

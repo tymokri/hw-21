@@ -1,0 +1,83 @@
+.getstarted {
+  position: relative;
+  background: linear-gradient(229.32deg, #6888FF 12.77%, #5E80FF 73.11%);
+
+  &:before {
+    @extend %bg-default;
+    @extend %bg-pos-absolut;
+
+    background-image: url("../assets/img/getstarted-clouds.svg");
+    z-index: 0;
+  }
+
+  &__content {
+    width: 100%;
+    padding: 91px 0 170px;
+    gap: 30px;
+
+    &-subtitle {
+      @extend %subtitle-style;
+      color: $white-color;
+    }
+
+    &-title {
+      @extend %title-style;
+      color: $white-color;
+      font-size: $font-xxxl;
+      font-weight: 500;
+      line-height: 60px;
+    }
+
+    &-description {
+      @extend %description-style;
+      color: $white-color;
+      max-width: 712px;
+      margin-bottom: 30px;
+    }
+
+    &-buttons {
+      position: absolute;
+      top: 70%;
+
+      &-left,
+      &-right {
+        a {
+          font-family: $secondary-font;
+          font-size: $font-s;
+          padding: 13px 25px;
+        }
+      }
+
+      &-left {
+        a {
+          border-top-left-radius: 2px;
+          border-bottom-left-radius: 2px;
+          border: 1px $white-color solid;
+          font-weight: 700;
+          color: $dark-color-ds-tx;
+          background-color: $white-color;
+        }
+      }
+
+      &-right {
+        a {
+          border-top-right-radius: 2px;
+          border-bottom-right-radius: 2px;
+          border: 1px $light-color-tx solid;
+          font-weight: 500;
+          color: $light-color-tx;
+          background-color: transparent;
+
+          &:hover {
+            font-weight: 700;
+            color: $dark-color-ds-tx;
+            background-color: $white-color;
+            border: 1px $white-color solid;
+            transition: .3s;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+}

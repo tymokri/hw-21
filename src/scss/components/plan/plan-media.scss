@@ -1,0 +1,49 @@
+.plan {
+
+  @media (max-width: #{$breakpoint-xl}) {
+    position: unset;
+
+    &__content {
+      flex-direction: column;
+      padding-top: 50px;
+    }
+
+    &__info-wrapper {
+      align-items: center;
+      padding-top: 10px;
+    }
+
+    &__description {
+      max-width: 100%;
+      text-align: center;
+    }
+
+    &__illustration {
+      &-content {
+        position: unset;
+        width: 100%;
+      }
+    }
+  }
+
+  @media (max-width: #{$breakpoint-md}) {
+    &__subtitle {
+      font-size: $font-md;
+    }
+
+    &__title {
+      font-size: $font-xl;
+      text-align: center;
+    }
+
+    &__info-wrapper {
+      gap: 20px;
+    }
+  }
+
+  @media (max-width: #{$breakpoint-sm}) {
+    &__info-wrapper {
+      gap: 10px;
+    }
+  }
+}

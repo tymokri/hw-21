@@ -1,0 +1,75 @@
+.quotes {
+  position: relative;
+  background: linear-gradient(180deg, #EAF0FF 0%, #F6F9FF 100%);
+
+  &__content {
+    padding: 110px 0;
+
+    &-about {
+      width: 100%;
+
+      &-subtitle {
+        @extend %subtitle-style;
+        margin-bottom: 20px;
+      }
+
+      &-title {
+        font-weight: 500!important;
+        @extend %title-style;
+        font-size: $font-xxl;
+        margin-bottom: 14px;
+      }
+
+      &-description {
+        font-family: $subsidiary-font;
+        font-size: $font-xs;
+        font-weight: 600;
+        max-width: 323px;
+        line-height: 23px;
+        letter-spacing: 0.03em;
+      }
+    }
+
+    &-card {
+      width: 100%;
+      position: relative;
+
+      &-description {
+        @extend %quotes-card-dscr;
+        padding: 40px 71px;
+        box-shadow: $shadow-sm;
+      }
+
+      &-photo {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%) translateY(-50%);
+      }
+
+      &-controls {
+        padding-top: 78px;
+        gap: 12px;
+
+        &-item {
+          @extend %item-dots;
+
+          &-active,
+          &:hover {
+            @extend %item-dots-hover;
+          }
+        }
+      }
+    }
+  }
+
+  &__content-card-description-duplicate {
+    @extend %quotes-card-dscr;
+    padding: 40px 0 40px 71px;
+    max-width: 423px;
+    max-height: 178px;
+    position: absolute;
+    top: 22.7%;
+    left: 80%;
+    background-color: $bg-color;
+  }
+}

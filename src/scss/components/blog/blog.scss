@@ -1,0 +1,120 @@
+.blog {
+  background-color: $bg-color;
+  position: relative;
+  z-index: -99;
+
+  &__content-wrapper-main {
+    padding: 104px 0;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  &__subtitle {
+    @extend %subtitle-style;
+    margin-bottom: 20px;
+  }
+
+  &__title-main {
+    font-weight: 500!important;
+    @extend %title-style;
+    font-size: $font-xl;
+    margin-bottom: 92px;
+  }
+
+  &__content {
+    background-color: $white-color;
+    border: 1px $default-color-btn solid;
+
+    &-picture {
+      width: 53%;
+    }
+
+    &-about {
+      width: 47%;
+    }
+
+    &-title {
+      font-family: $secondary-font;
+      font-size: $font-xxl;
+      font-weight: 400;
+      line-height: 45px;
+      color: $dark-color-tx;
+      margin-bottom: 32px;
+    }
+
+    &-description {
+      font-size: $font-sm;
+      max-width: 408px;
+      margin-bottom: 31px;
+      line-height: 27px;
+      letter-spacing: 0.03em;
+    }
+
+    &-buttons {
+      &-btn-left {
+        a {
+          font-family: $secondary-font;
+          font-size: $font-s;
+          padding: 13px 20px;
+          line-height: 13px;
+          font-weight: 700;
+
+          border-radius: 2px;
+          border: 1px $default-color-btn solid;
+          color: $accent-color-tx;
+          background-color: $default-color-btn;
+        }
+      }
+
+      &-btn-right {
+        a {
+          font-family: $secondary-font;
+          font-size: $font-s;
+          padding: 13px 20px;
+          line-height: 13px;
+          font-weight: 700;
+          color: $btn-color-tx;
+
+          &:hover {
+            border-radius: 2px;
+            border: 1px $default-color-btn solid;
+            color: $accent-color-tx;
+            background-color: $default-color-btn;
+            cursor: pointer;
+            transition: .3s;
+          }
+        }
+      }
+    }
+  }
+
+  &__controls {
+    padding-top: 100px;
+    gap: 12px;
+
+    &-item {
+      @extend %item-dots;
+
+      &-active,
+      &:hover {
+        @extend %item-dots-hover;
+      }
+    }
+  }
+
+  &__arrows-left,
+  &__arrows-right {
+    position: absolute;
+    content: '';
+    top: 50%;
+    z-index: -50;
+  }
+
+  &__arrows-left {
+    left: 15%;
+  }
+
+  &__arrows-right {
+    right: 15%;
+  }
+}

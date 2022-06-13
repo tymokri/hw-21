@@ -1,0 +1,44 @@
+.getstarted {
+
+  @media (max-width: $breakpoint-md) {
+    &__content {
+      gap: 20px;
+    }
+  }
+
+  @media (max-width: $breakpoint-sm) {
+    &__content {
+      min-height: 450px;
+      padding: 50px 0;
+      gap: 15px;
+
+      &-subtitle {
+        font-size: $font-md;
+      }
+
+      &-title {
+        font-size: $font-xxl;
+      }
+
+      &-description {
+        max-width: 100%;
+        margin-bottom: 10px;
+      }
+
+      &-buttons {
+        flex-direction: column;
+        gap: 20px;
+        top: 65%;
+
+        &-left,
+        &-right {
+          a {
+            border-radius: 2px;
+            width: 100%;
+            font-size: $font-m;
+          }
+        }
+      }
+    }
+  }
+}

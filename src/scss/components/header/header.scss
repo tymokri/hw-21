@@ -1,0 +1,94 @@
+.header {
+  font-family: $secondary-font;
+  border-bottom: 1px solid $section-line-color;
+  max-height: $header-height;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: $white-color;
+  z-index: 99;
+
+  &__wrapper {
+    padding: 18px 0;
+  }
+
+  &__navigation {
+    gap: 73px;
+
+    &-logo {
+      $logo-dimensions: 26px;
+      a {
+        display: inline-block;
+        width: $logo-dimensions;
+        height: $logo-dimensions;
+        background-color: $secondary-accent-color;
+        border-radius: 50%;
+
+        &:hover {
+          background-color: $hover-color-btn;
+          transition: .3s;
+          transform: scale(1.3);
+        }
+      }
+    }
+
+    nav {
+      ul {
+        gap: 42px;
+
+        li {
+          a {
+            font-size: $font-xs;
+
+            &.active,
+            &:hover:not(.active) {
+              font-weight: 700;
+              color: $secondary-accent-color;
+            }
+
+            &:hover:not(.active) {
+              font-weight: 400;
+              transition: .3s;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &__social {
+    gap: 44px;
+    &-icons {
+      ul {
+        gap: 38px;
+
+        .bi:hover {
+          color: $secondary-accent-color;
+          transition: .3s;
+        }
+      }
+    }
+
+    &-cta {
+      a {
+        display: inline-block;
+        padding: 13px 21px;
+        font-size: $font-s;
+        font-weight: 700;
+        color: $accent-color-tx;
+        background-color: $default-color-btn;
+        border-radius: 2px;
+        text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+
+        &:hover {
+          color: $hover-color-tx;
+          background-color: $hover-color-btn;
+          transition: .3s;
+        }
+      }
+    }
+  }
+}
+

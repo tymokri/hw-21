@@ -1,0 +1,122 @@
+body {
+  font-family: $main-font;
+  font-weight: 400;
+  font-size: $font-md;
+}
+
+main {
+  margin-top: $header-height;
+}
+
+a {
+  display: inline-block;
+  color: $accent-color;
+  text-decoration: none;
+
+  &:active {
+    color: $hover-color-tx !important;
+    transition: .3s;
+  }
+}
+
+p {
+  color: $main-color-tx;
+}
+
+.container-header,
+.container {
+  width: 100%;
+  height: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.container-header {
+  max-width: $container-lg-width;
+}
+
+.container {
+  max-width: $container-md-width;
+}
+
+.row {
+  display: flex;
+}
+
+.col {
+  width: 100%;
+}
+
+.list-unstyled {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.align-items-flex-start {
+  align-items: flex-start;
+}
+
+.align-items-flex-end {
+  align-items: flex-end;
+}
+
+.justify-content-end {
+  justify-content: end;
+}
+
+.direction-column {
+  flex-direction: column;
+}
+
+.direction-row {
+  flex-direction: row;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.bi-view-stacked {
+  background-color: $secondary-accent-color;
+}
+
+.d-inline-block {
+  display: inline-block;
+}
+
+@media (max-width: $breakpoint-xxl) {
+  .container {
+    max-width: 1024px;
+  }
+}
+
+@media (max-width: $breakpoint-xl) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+@media (max-width: $breakpoint-md) {
+  .container {
+    max-width: 576px;
+  }
+}
+
+@media (max-width: $breakpoint-sm) {
+  .container {
+    max-width: 320px;
+  }
+}

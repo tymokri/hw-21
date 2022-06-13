@@ -1,0 +1,19 @@
+{
+  "name": "hw-21",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tymokri/hw-21.git"
+  },
+  "author": "Khrystyna Tymofiichuk",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tymokri/hw-21/issues"
+  },
+  "homepage": "https://github.com/tymokri/hw-21#readme"
+}

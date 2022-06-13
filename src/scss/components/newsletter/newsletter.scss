@@ -1,0 +1,71 @@
+.newsletter {
+  background-color: $bg-color-light;
+  border-bottom: 1px $section-line-color solid;
+
+  &__content {
+    padding: 118px 0;
+    margin: 0 auto;
+    gap: 80px;
+
+    &-about {
+      width: 40%;
+      
+      &-title {
+        font-family: $secondary-font;
+        font-size: $font-l;
+        line-height: 23px;
+        font-weight: 700;
+        color: $dark-color-tx;
+        margin-bottom: 18px;
+      }
+
+      &-description {
+        font-size: $font-sm;
+        line-height: 27px;
+        letter-spacing: 0.03em;
+        max-width: 330px;
+      }
+    }
+
+    &-form {
+      width: 60%;
+      display: inline-block;
+
+      &-input,
+      &-button a {
+        font-family: $secondary-font;
+        font-size: $font-s;
+        font-weight: 700;
+        border-radius: 5px;
+      }
+
+      &-input {
+        padding: 20px 90px 20px 23px;
+        color: $main-color-btn-tx;
+        background-color: $light-color-btn-tx;
+        border: 1px $light-color-btn-tx solid;
+        margin-right: 14px;
+      }
+
+      &-button {
+        a {
+          padding: 20px 60px;
+          color: $white-color;
+          background-color: $dark-accent-color-btn;
+          border: 1px $dark-accent-color-btn solid;
+
+          &:hover {
+            color: $dark-accent-color-btn;
+            background-color: $white-color;
+            border: 1px $dark-accent-color-btn solid;
+            transition: .3s;
+          }
+        }
+      }
+    }
+  }
+
+
+
+
+}

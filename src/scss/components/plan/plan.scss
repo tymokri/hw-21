@@ -1,0 +1,79 @@
+.plan {
+  position: relative;
+  background-color: $bg-color;
+
+  &__content {
+    width: 100%;
+    height: 100%;
+    padding: 170px 0 210px;
+  }
+
+  &__info-wrapper {
+    @extend %title-wrapper;
+    align-items: start;
+    padding-top: 40px;
+  }
+
+  &__subtitle {
+    @extend %subtitle-style;
+  }
+
+  &__title {
+    @extend %title-style;
+    font-size: $font-xxl;
+  }
+
+  &__description {
+    @extend %description-style;
+    max-width: 413px;
+  }
+
+  &__button-left,
+  &__button-right {
+    a {
+      font-family: $secondary-font;
+      font-size: $font-s;
+      padding: 13px 25px;
+    }
+  }
+
+  &__button-left {
+    a {
+      border-top-left-radius: 2px;
+      border-bottom-left-radius: 2px;
+      border: 1px $secondary-accent-color solid;
+      font-weight: 700;
+      color: $white-color;
+      background-color: $secondary-accent-color;
+    }
+  }
+
+  &__button-right {
+    a {
+      border-top-right-radius: 2px;
+      border-bottom-right-radius: 2px;
+      border: 1px $btn-color-tx solid;
+      font-weight: 500;
+      color: $btn-color-tx;
+      background-color: transparent;
+
+      &:hover {
+        font-weight: 700;
+        color: $white-color;
+        background-color: $secondary-accent-color;
+        border: 1px $secondary-accent-color solid;
+        transition: .3s;
+        cursor: pointer;
+      }
+    }
+  }
+
+  &__illustration {
+    &-content {
+      position: absolute;
+      top: 16vh;
+      right: 0;
+      width: 60%;
+    }
+  }
+}

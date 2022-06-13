@@ -1,0 +1,101 @@
+.banner {
+  position: relative;
+  background: linear-gradient(180deg, #F4F7FF 0%, #F1F5FF 100%);
+  height: calc(100vh - #{$header-height});
+  min-height: 550px;
+  border-bottom: 1px solid $section-line-color;
+
+  &:before,
+  &:after {
+    @extend %bg-default;
+
+    @extend %bg-pos-absolut;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+
+  &:before {
+    background-image: url("../assets/img/clouds.svg");
+    z-index: 1;
+  }
+
+  &:after {
+    background-image: url("../assets/img/graph.svg");
+    z-index: 0;
+  }
+
+  .row {
+    display: block;
+  }
+
+  &__wrapper {
+    position: relative;
+    z-index: 2;
+    height: 100%;
+    padding-top: 18vh;
+  }
+
+  &__content {
+    width: 100%;
+  }
+
+  &__title-wrapper {
+    @extend %title-wrapper;
+  }
+
+  &__subtitle {
+    @extend %subtitle-style;
+  }
+
+  &__title {
+    @extend %title-style;
+    font-size: $font-xxxl;
+  }
+
+  &__description {
+    @extend %description-style;
+    max-width: 55%;
+    text-shadow: $shadow-md;
+  }
+
+  &__play {
+    margin-top: 20px;
+
+    a {
+      width: 52px;
+      height: 52px;
+      border-radius: 50%;
+      background-color: $white-color;
+      box-shadow: $shadow-sm;
+      margin: 0 auto;
+
+      i {
+        color: $secondary-accent-color;
+      }
+    }
+  }
+
+  &__controls {
+    gap: 12px;
+    position: absolute;
+    bottom: 28px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    &-item {
+      @extend %item-dots;
+
+      &-active,
+      &:hover {
+        @extend %item-dots-hover;
+      }
+    }
+  }
+}
+

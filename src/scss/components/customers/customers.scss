@@ -1,0 +1,30 @@
+.customers {
+  border-bottom: 1px solid $section-line-color;
+
+  &__content {
+    width: 100%;
+  }
+
+  & {
+    nav {
+      padding: 58px 0;
+
+      ul {
+        gap: 75px;
+
+        path {
+          &.active,
+          &:hover:not(.active) {
+            fill: $secondary-accent-color;
+          }
+
+          &:hover:not(.active) {
+            transition: .3s;
+          }
+        }
+      }
+    }
+  }
+}
+
+

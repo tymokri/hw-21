@@ -1,0 +1,30 @@
+.banner {
+
+  @media (max-width: #{$breakpoint-md}) {
+    &__wrapper {
+      padding-top: 10vh;
+    }
+
+    &__title-wrapper {
+      gap: 24px;
+    }
+
+    &__subtitle {
+      font-size: $font-md;
+    }
+
+    &__description {
+      max-width: 80%;
+    }
+  }
+
+  @media (max-width: #{$breakpoint-sm}) {
+    &__title {
+      font-size: $font-xxl;
+    }
+
+    &__description {
+      max-width: 60%;
+    }
+  }
+}

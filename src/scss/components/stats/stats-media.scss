@@ -1,0 +1,33 @@
+.stats {
+
+  @media (max-width: #{$breakpoint-md}) {
+    &__content-wrapper {
+      padding: 30px 0;
+      column-gap: 90px;
+    }
+
+    &__customers,
+    &__users {
+      &-title {
+        margin: 10px 0;
+      }
+    }
+  }
+
+  @media (max-width: #{$breakpoint-sm}) {
+    &__content-wrapper {
+      column-gap: 30px;
+    }
+
+    &__customers,
+    &__users {
+
+      align-items: center;
+
+      &-title,
+      &-description {
+        text-align: center;
+      }
+    }
+  }
+}
