@@ -8,9 +8,7 @@
   }
 
   @media (max-width: #{$breakpoint-xl}) {
-    &__content-wrapper-main {
-      padding: 60px 0;
-    }
+    padding: 60px 0;
 
     &__subtitle {
       margin-bottom: 0;

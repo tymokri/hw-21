@@ -12,9 +12,9 @@
 
   @media (max-width: #{$breakpoint-md}) {
     & {
-      nav {
-        padding: 30px 0;
+      padding: 30px 0;
 
+      nav {
         ul {
           flex-wrap: wrap;
         }

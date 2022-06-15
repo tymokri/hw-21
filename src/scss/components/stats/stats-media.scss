@@ -1,8 +1,9 @@
 .stats {
 
   @media (max-width: #{$breakpoint-md}) {
+    padding: 30px 0;
+
     &__content-wrapper {
-      padding: 30px 0;
       column-gap: 90px;
     }
 

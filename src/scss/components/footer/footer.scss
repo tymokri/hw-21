@@ -1,6 +1,7 @@
 .footer {
   font-family: $secondary-font;
   border-bottom: 1px solid $section-line-color;
+  padding: 100px 0;
 
   &__content {
     width: 100%;
@@ -9,10 +10,6 @@
 
   .row {
     flex-direction: column;
-  }
-
-  &__wrapper {
-    padding: 100px 0;
   }
 
   &__cpr {

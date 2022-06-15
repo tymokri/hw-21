@@ -1,15 +1,11 @@
 .features {
 
   @media (max-width: #{$breakpoint-xl}) {
-    &__content-wrapper {
-      padding: 100px 0;
-    }
+    padding: 100px 0;
   }
 
   @media (max-width: #{$breakpoint-md}) {
-    &__content-wrapper {
-      padding: 70px 0;
-    }
+    padding: 70px 0;
 
     &__title-wrapper,
     &__content {
@@ -32,9 +28,7 @@
   }
 
   @media (max-width: #{$breakpoint-sm}) {
-    &__content-wrapper {
-      padding: 30px 0;
-    }
+    padding: 30px 0;
 
     &__title-wrapper {
       gap: 0;

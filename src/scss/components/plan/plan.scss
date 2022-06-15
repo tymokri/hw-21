@@ -1,11 +1,11 @@
 .plan {
   position: relative;
   background-color: $bg-color;
+  padding: 170px 0 210px;
 
   &__content {
     width: 100%;
     height: 100%;
-    padding: 170px 0 210px;
   }
 
   &__info-wrapper {

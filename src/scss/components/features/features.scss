@@ -1,5 +1,6 @@
 .features {
   position: relative;
+  padding: 170px 0;
 
   &:before {
     @extend %bg-default;
@@ -10,7 +11,6 @@
   }
 
   &__content-wrapper {
-    padding: 170px 0;
     width: 100%;
     margin: 0 auto;
   }

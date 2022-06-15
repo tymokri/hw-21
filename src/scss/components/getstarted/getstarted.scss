@@ -1,6 +1,7 @@
 .getstarted {
   position: relative;
   background: linear-gradient(229.32deg, #6888FF 12.77%, #5E80FF 73.11%);
+  padding: 91px 0 170px;
 
   &:before {
     @extend %bg-default;
@@ -12,7 +13,6 @@
 
   &__content {
     width: 100%;
-    padding: 91px 0 170px;
     gap: 30px;
 
     &-subtitle {

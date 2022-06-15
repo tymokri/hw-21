@@ -1,5 +1,6 @@
 .customers {
   border-bottom: 1px solid $section-line-color;
+  padding: 58px 0;
 
   &__content {
     width: 100%;
@@ -7,12 +8,10 @@
 
   & {
     nav {
-      padding: 58px 0;
-
       ul {
         gap: 75px;
 
-        path {
+        a {
           &.active,
           &:hover:not(.active) {
             fill: $secondary-accent-color;

@@ -2,11 +2,10 @@
   background-color: $bg-color;
   position: relative;
   z-index: -99;
+  padding: 104px 0;
 
   &__content-wrapper-main {
-    padding: 104px 0;
     width: 100%;
-    margin: 0 auto;
   }
 
   &__subtitle {
@@ -27,6 +26,8 @@
 
     &-picture {
       width: 53%;
+      padding: 63px 35px;
+      gap: 13px;
     }
 
     &-about {
